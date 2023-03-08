@@ -34,8 +34,7 @@ function sort(matriz){
 
     console.log(menores,mayores)
 
-    sort(menores)
-    sort(mayores)
+    return [ sort(menores) + pivote + sort(mayores) ]
 }
 
-sort(x)
+console.log(sort(x))
