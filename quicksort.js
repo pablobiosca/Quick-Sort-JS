@@ -34,7 +34,8 @@ function sort(matriz){
 
     console.log(menores,mayores)
 
-    return [ sort(menores) + pivote + sort(mayores) ]
+    //uso de spread operator para subir en la resursividad 2 elementos siempre
+    return [ ...sort(menores) , pivote , ...sort(mayores) ]
 }
 
 console.log(sort(x))
